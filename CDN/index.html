@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- An import map is a JSON object that allows developers to control how the browser resolves module specifiers when importing JavaScript modules
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap  -->
+    <script type="importmap">
+        {
+          "imports": {
+            "react": "https://ga.jspm.io/npm:react@18.2.0/index.js",
+            "react-dom/client": "https://ga.jspm.io/npm:react-dom@18.2.0/client.js"
+          },
+          "scopes": {
+            "https://ga.jspm.io/": {
+              "react-dom": "https://ga.jspm.io/npm:react-dom@18.2.0/index.js",
+              "scheduler": "https://ga.jspm.io/npm:scheduler@0.23.0/index.js"
+            }
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
