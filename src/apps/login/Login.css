@@ -2,9 +2,11 @@ form {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    max-width: 300px;
+    max-width: 500px;
+    min-width: 300px;
 }
 
+textarea,
 input[type="text"],
 input[type="password"] {
     padding: 10px;
@@ -15,4 +17,20 @@ button[type="submit"] {
     background-color: darkorchid;
     padding: 10px 20px;
     border-radius: 6px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+fieldset {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+legend {
+    padding: 0 3px;
 }
